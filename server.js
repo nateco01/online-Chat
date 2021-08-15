@@ -6,7 +6,7 @@ app.use(express.static('public'))
 const http = require('http').Server(app)
 const serverSocket = require('socket.io')(http)
 
-const porta = 8080
+const porta = 3000
 
 http.listen(porta, function(){
     console.log('Conexão bem sucedida, abra o seu navegador em http//localhost'+ porta)
