@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <script src="./socket.io/socket.io.js"></script>
+    <link rel="stylesheet" href="./estilo.css">
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <form id="form">
+        <input type="text"  id="msg" autofocus autocomplete="off" placeholder="Digite aqui sua mensagem">
+        <button type="submit" id="enviar">Enviar</button>
+    </form>
+
+    <ul id="mensagens"></ul>
+
+    <div id="status"></div>
+
+
+<script>
+    $(function(){
+        const socket = io()
+        $('#form').submit(function(evt){
+
+            socket.emit('chat msg', $('#msg').val())
+                $('#msg').val('')
+                return false
+        })
+
+        socket.on('chat msg', function(msg){
+        $('#mensagens').append($('<li>').text(msg))
+    })
+    })
+</script>
+
+</body>
+</html>

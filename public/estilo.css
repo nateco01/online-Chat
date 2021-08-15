@@ -1,0 +1,104 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+body
+{
+    background-color: rgb(157, 157, 241);
+}
+#form
+{
+    display: flex;
+    position: absolute;
+    left: 530px;
+}
+#msg
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16pt;
+    width: 480px;
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: -290px;
+}
+#enviar
+{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    text-align: center;
+    width: 150px;
+    height: 40px;
+    left: 295px;
+    border-radius: 2px 3px 3px;
+}
+li{
+    
+    list-style: none;
+    text-decoration: none;
+    color:rgb(248, 242, 242);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15pt;
+    margin-bottom: 5px;
+    padding-top: 5px;
+    background-color: rgba(0, 0, 0, 0.26);
+    padding-right: 0px;
+    margin-right: 0px;
+    width: 320px;
+    border: 1px solid rgba(0, 0, 0, 0.144);
+    border-radius: 1px 5px 9px 2px;
+}
+
+@media (width:320px) {
+    li{
+    
+        list-style: none;
+        text-decoration: none;
+        color:rgb(248, 242, 242);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 35pt;
+        margin-bottom: 5px;
+        padding-top: 5px;
+        background-color: rgba(0, 0, 0, 0.26);
+        padding-right: 0px;
+        margin-right: 0px;
+        width: 320px;
+        border: 1px solid rgba(0, 0, 0, 0.144);
+        border-radius: 1px 5px 9px 2px;
+    }
+    #msg
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35pt;
+    width: 380px;
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: -270px;
+}
+#enviar
+{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    width: 170px;
+    height: 70px;
+    left: 295px;
+    border-radius: 2px 3px 3px;
+}
+#form
+{
+    display: flex;
+    position: absolute;
+    left: 530px;
+    
+}
+}
